@@ -30,6 +30,10 @@ if (error != nil) {
 
 不得不说，`Swift`的异常处理更为优雅，下面会重点介绍。
 
+##Demo
+
+可到`github `下载这个[示例Demo](https://github.com/GarveyCalvin/Swift2.0-ExceptionHandler)
+
 ##构建异常类型
 
 我们可以构建自己的异常类型，它只是一个枚举，遵循`ErrorType`，像是这样
