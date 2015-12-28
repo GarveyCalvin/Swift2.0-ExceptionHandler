@@ -32,7 +32,7 @@ if (error != nil) {
 
 ##Demo
 
-可到`github `下载这个[示例Demo](https://github.com/GarveyCalvin/Swift2.0-ExceptionHandler)
+你可以在`github`上下载这个[示例Demo](https://github.com/GarveyCalvin/Swift2.0-ExceptionHandler)
 
 ##构建异常类型
 
@@ -128,6 +128,9 @@ func myLoad(item: String?) throws -> String {
 ```
 
 > 需要注意的是，`defer`语句可以有多个，它们的执行顺序是`Handle 1` -> `Handle 2`。不难理解，它们的执行顺序是先进后出的。
+
+
+这里再说一下，你可以在`github`上下载这个[示例Demo](https://github.com/GarveyCalvin/Swift2.0-ExceptionHandler)
 
 <br>
 
