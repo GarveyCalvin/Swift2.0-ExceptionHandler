@@ -49,10 +49,21 @@ do {
 
 try? myLoad(nil)
 
+// Normal function can use this "guard" 
+
+func printlnName(name: String) {
+    guard name != "" else {
+        print("Name should be not null")
+        return
+    }
+}
+
+printlnName("")
+
+
 
 // 声明
 
 // 博文作者：GarveyCalvin
 // 博文出处：http://www.cnblogs.com/GarveyCalvin
 // 本文版权归作者和博客园共有，欢迎转载，但须保留此段声明，并给出原文链接，谢谢合作！
-

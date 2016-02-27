@@ -2,6 +2,9 @@
 
 <br>
 
+**Update Record:**<br>
+<span style="color: gray">Update by 2016-02-27</span>
+
 ##前言
 
 关于我们为什么要使用异常处理，请看百度百科为我们作出的描述，想要更详细的资料请点[这里](http://baike.baidu.com/link?url=pgGvxSsSqeuz3OnQ7NrWkqYwZXtY9MVTeuhOZolRvcr2UQtCLzZHQ3Y-2lFpAxeCQURXjCLqqY84XX0VLs4zaa)
@@ -60,8 +63,8 @@ func myLoad(item: String?) throws -> String {
 }
 ```
 
-> **guard**: `guard`必须与`else`配合使用，只有当`guard`审查的条件成立，`guard`之后的代码才会执行，否则抛出异常。
-
+> **guard**: `guard`必须与`else`配合使用，只有当`guard`审查的条件成立，`guard`之后的代码才会执行，否则抛出异常。<br>
+> 使用`guard`还有一个好处，前面`guard`定义的变量，在`guard`后面也可以使用，`newItem`就是这样。
 
 ##捕获/处理异常
 
@@ -132,7 +135,23 @@ func myLoad(item: String?) throws -> String {
 
 这里再说一下，你可以在`github`上下载这个[示例Demo](https://github.com/GarveyCalvin/Swift2.0-ExceptionHandler)
 
-<br>
+#普通函数使用Guard
+
+我们可以在普通的函数里使用`guard`，即不带抛异常的函数。可以用来代替`if`去使用。
+
+我编写了一个`printlnName`的函数，它接受一个参数`name`。内部只有一个判断，如果内部参数`name`为空时，打印错误
+
+```swift
+func printlnName(name: String) {
+    guard name != "" else {
+        print("Name should be not null")
+        return
+    }
+}
+
+printlnName("")
+```
+
 
 ##声明
 
