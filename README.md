@@ -64,7 +64,7 @@ func myLoad(item: String?) throws -> String {
 ```
 
 > **guard**: `guard`必须与`else`配合使用，只有当`guard`审查的条件成立，`guard`之后的代码才会执行，否则抛出异常。<br>
-> 使用`guard`还有一个好处，前面`guard`定义的变量，在`guard`后面也可以使用，`newItem`就是这样。
+> 使用`guard`还有一个好处，`guard`定义的变量，在`guard`后面也可以使用，并且是已经解包了，`newItem`就是这样。
 
 ##捕获/处理异常
 
